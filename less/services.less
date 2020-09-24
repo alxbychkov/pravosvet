@@ -1,0 +1,77 @@
+.main {
+    .service-article {
+        padding: 2rem 15px 3.5rem;
+        @media screen and (max-width: 768px) {
+            padding-top: 7rem;
+        }
+        .services-body {
+            display: flex;
+            flex-wrap: wrap;
+            .services-body-item:nth-child(1) {
+                .services-body-item__head {
+                    background: #FF1010;
+                    border-radius: 5px 0px 0px 5px;
+                    @media screen and (max-width:768px) {
+                        border-radius: 5px;
+                    }
+                }
+                a {
+                    margin-right: 2rem;
+                    @media screen and (max-width:768px) {
+                        margin: 0;
+                    }
+                }
+            }
+            .services-body-item:nth-child(2) {
+                .services-body-item__head {
+                    background: #3C3D44;
+                    border-radius: 0px 5px 5px 0px;
+                    @media screen and (max-width:768px) {
+                        border-radius: 5px;
+                    }
+                }
+                a {
+                    margin-left: 2rem;
+                    @media screen and (max-width:768px) {
+                        margin: 0;
+                    }
+                }
+            }
+            .services-body-item {
+                color: #fff;
+                padding: 1.5rem 0;
+                width: 50%;
+                h3 {
+                    font-family: Merriweather;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    padding: 1.5rem 8rem 1.5rem 1rem; 
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    max-height: 140px;
+                }
+                .services-body-item__text {
+                    padding: 1.5rem 0;
+                    a {
+                        display: block;
+                        font-family: "Rubik";
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        padding: 1rem 0;
+                        color: #3C3D44;
+                        border-bottom: 1px solid #3C3D44;
+                        transition: .5s;
+                        cursor: pointer;
+                        &:hover {
+                            color: #FF1010;
+                        }
+                    }
+                }
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

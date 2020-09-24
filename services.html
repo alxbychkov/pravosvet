@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Services</title>
+</head>
+
+<body>
+    <!-- modalApp -->
+    <div class="modal fade" id="modalWindowApp" tabindex="-1" role="dialog" aria-labelledby="modalWindowTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWindowTitle">Оставьте заявку</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-callback">
+                        <input type="text" name="name" placeholder="ВАШЕ ИМЯ">
+                        <input type="tel" name="phone" placeholder="НОМЕР ТЕЛЕФОНА">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="КОММЕНТАРИЙ"></textarea>
+                        <button class="btn-red">оставить заявку</button>
+                        <div class="confidiality">
+                            <input type="checkbox" name="check">
+                            <span>Согласен с</span><a href="">политикой конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modalApp -->
+    <!-- modalCall -->
+    <div class="modal fade" id="modalWindowCall" tabindex="-1" role="dialog" aria-labelledby="modalWindowTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWindowTitle">Обратный звонок</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-callback">
+                        <input type="text" name="name" placeholder="ВАШЕ ИМЯ">
+                        <input type="tel" name="phone" placeholder="НОМЕР ТЕЛЕФОНА">
+                        <button class="btn-red">оставить заявку</button>
+                        <div class="confidiality">
+                            <input type="checkbox" name="check">
+                            <span>Согласен с</span><a href="">политикой конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modalCall -->
+    <!-- header -->
+    <header class="header-inner">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="header-top-logo col-xl-6 col-lg-4 col-md-3 col-3">
+                        <a href="index.html" class="logo"
+                            style="background: url(icons/logo_red.png); background-repeat: no-repeat; background-size: cover"></a>
+                    </div>
+                    <div class="header-top-contacts col-xl-4 col-lg-5 col-md-6">
+                        <a href="mailto:info@pravosvet.ru" class="email">info@pravosvet.ru</a>
+                        <span>|</span>
+                        <a href="tel:+7 495 555 55 55" class="phone">+7 495 555 55 55</a>
+                    </div>
+                    <div class="header-top-btn col-xl-2 col-lg-3 col-md-3">
+                        <button class="btn-red" data-toggle="modal" data-target="#modalWindowCall">Обратный звонок</button>
+                    </div>
+                    <div class="header-top-burger col-1">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <nav class="navigation">
+                        <a href="index.html" class="navigation-link">Главная</a>
+                        <a href="services.html" class="navigation-link">Услуги</a>
+                        <a href="company.html" class="navigation-link">О компании</a>
+                        <a href="price-list.html" class="navigation-link">Прайс листы</a>
+                        <a href="documents.html" class="navigation-link">Документы</a>
+                        <a href="contacts.html" class="navigation-link">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-scroll">
+        <nav class="navigation container">
+            <a href="index.html" class="navigation-link">Главная</a>
+            <a href="services.html" class="navigation-link">Услуги</a>
+            <a href="company.html" class="navigation-link">О компании</a>
+            <a href="price-list.html" class="navigation-link">Прайс листы</a>
+            <a href="documents.html" class="navigation-link">Документы</a>
+            <a href="contacts.html" class="navigation-link">Контакты</a>
+        </nav>
+        <a href="tel:+7 495 555 55 55" class="phone">+7 495 555 55 55</a>
+        <a href="mailto:info@pravosvet.ru" class="email">info@pravosvet.ru</a>
+        <button class="btn-red" data-toggle="modal" data-target="#modalWindowCall">Обратный звонок</button>
+    </div>
+    <!-- header -->
+    <!-- main -->
+    <main class="main">
+        <article class="service-article container">
+            <section class="services-body">
+                <!-- <div class="row"> -->
+                <div class="services-body-item">
+                    <h3 class="services-body-item__head">Услуги профессионального перевода</h3>
+                    <div class="services-body-item__text">
+                        <a href="service-card.html">Перевод профильных текстов</a>
+                        <a href="#">Наториальный перевод документов </a>
+                        <a href="#">Перевод хужожественной литературы </a>
+                        <a href="#">Перевод профильных текстов</a>
+                        <a href="#">Наториальный перевод документов</a>
+                        <a href="#">Перевод хужожественной литературы</a>
+                        <a href="#">Перевод профильных текстов</a>
+                        <a href="#">Наториальный перевод документов</a>
+                        <a href="#">Перевод хужожественной литературы</a>
+                    </div>
+                </div>
+                <div class="services-body-item">
+                    <h3 class="services-body-item__head">Оказание юридической помощи</h3>
+                    <div class="services-body-item__text">
+                        <a href="#">Страховая занижает выплаты</a>
+                        <a href="#">Независимая экспертиза автомобиля</a>
+                        <a href="#">Отказ в выплате по КАСКО</a>
+                        <a href="#">Страховая занижает выплаты</a>
+                        <a href="#">Независимая экспертиза автомобиля</a>
+                        <a href="#">Отказ в выплате по КАСКО</a>
+                        <a href="#">Страховая занижает выплаты</a>
+                        <a href="#">Независимая экспертиза автомобиля</a>
+                        <a href="#">Отказ в выплате по КАСКО</a>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </section>
+            <section class="services-body">
+
+            </section>
+        </article>
+        <!-- question -->
+        <article class="question-article">
+            <section class="question-section container">
+                <div class="row">
+                    <div class="question-item offset-lg-1 col-lg-6 col-md-7 col-12">
+                        <p class="title"><span class="span_red">Остались вопросы?</span></p>
+                        <p class="text">Заполните заявку и мы вам обязательно перезвоним</p>
+                    </div>
+                    <div class="question-item col-md-5 col-12">
+                        <button class="btn-red" data-toggle="modal" data-target="#modalWindowApp">Оставить
+                            заявку</button>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- question -->
+    </main>
+    <!-- main -->
+    <!-- footer -->
+    <footer class="footer">
+        <section class="container footer-section">
+            <div class="row">
+                <div class="footer-section-item col-lg-2 col-sm-3 col-4">
+                    <a href="index.html"><img src="icons/logo_red.png" alt=""></a>
+                </div>
+                <div class="footer-section-item col-lg-2">
+                    <a href="">Отказ в выплате по КАСКО</a>
+                    <a href="">Отказ в выплате по ОСАГО</a>
+                    <a href="">Страховая занижает вывлаты</a>
+                    <a href="">Независимая экспертиза автомобиля после оварии</a>
+                </div>
+                <div class="footer-section-item col-lg-2">
+                    <a href="service-card.html">Перевод профильных текстов</a>
+                    <a href="">Синхронный перевод</a>
+                    <a href="">Перевод художественной литературы</a>
+                    <a href="">Перевод договоров</a>
+                </div>
+                <div class="footer-section-item col-lg-2 col-sm-3">
+                    <a href="services.html">Все услуги</a>
+                    <a href="company.html">О компании</a>
+                    <a href="price-list.html">Прайслисты</a>
+                    <a href="documents.html">Документы</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-section-item col-lg-3 col-sm-6 col-8">
+                    <a href="tel:+7 495 555 55 55" class="phone">+7 495 555 55 55</a>
+                    <a href="mailto:info@pravosvet.ru" class="mail">info@pravosvet.ru</a>
+                    <a href="" class="rights">ООО “Правосвет”<br>Все права защищены</a>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- footer -->
+    <!-- scripts -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scroll-lock.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- scripts -->
+</body>
+
+</html>

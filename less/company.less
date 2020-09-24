@@ -1,0 +1,127 @@
+.main {
+    .company-article {
+        padding-top: 4rem;
+        @media screen and (max-width: 768px) {
+            padding-top: 7rem;
+        }
+        .company-section {
+            .company-body-item__head {
+                font-family: 'Merriweather';
+                font-weight: 700;
+                font-size: 1.5rem;
+                color: #3C3D44;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 135px;
+                    height: 5px;
+                    background: #FF1010;
+                    margin-top: 1.2rem;
+                }
+            }
+        }
+        .row {
+            flex-wrap: wrap;
+        }
+        .company-item:nth-of-type(2) {
+            display: flex;
+            align-items: flex-end;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                max-width: 540px;
+                max-height: 525px;
+                margin: 0 auto;
+            }
+        }
+        .company-item:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #696969;
+            line-height: 1.85rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            @media screen and (max-width: 991px){
+                margin-bottom: 2rem;
+            }
+            p {
+                margin-bottom: 1.5rem;
+                font-family: 'Merriweather',sans-serif;
+            }
+            .sign {
+                justify-content: flex-end;
+                align-items: center;
+                p {
+                    margin-bottom: 0;
+                    text-align: end;
+                    font-family: 'Rubik', sans-serif;
+                }
+                .position {
+                    color: #FF1010;
+                    font-size: .8rem;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .staff-article {
+        background: #F4F7FA;
+        .staff-section {
+            padding-top: 2rem;
+            .staff-body-item__head {
+                font-family: 'Merriweather';
+                font-weight: 700;
+                font-size: 1.5rem;
+                color: #3C3D44;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 135px;
+                    height: 5px;
+                    background: #FF1010;
+                    margin-top: 1.2rem;
+                }
+            }
+            & > .row {
+                padding-top: 2rem;
+                padding-bottom: 4rem;
+                & > div:nth-of-type(1) {
+                    @media screen and (max-width: 991px){
+                        margin-bottom: 2.5rem;
+                    }
+                }
+            }
+            .staff-member__title {
+                font-weight: 500;
+                font-size: 1.25rem;
+                color: #696969;
+                min-height: 72px;
+                @media screen and (max-width: 991px){
+                    min-height: auto;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .staff-member {
+                padding: 1.5rem 15px;
+                @media screen and (max-width: 991px){
+                    padding: 1rem 15px;
+                }
+                .name {
+                    font-weight: 500;
+                    color: #696969;
+                }
+                .position {
+                    font-style: italic;
+                    font-weight: 300;
+                    color: #FF1010;
+                    margin-top: .7rem;
+                }
+            }
+        }
+    }
+}

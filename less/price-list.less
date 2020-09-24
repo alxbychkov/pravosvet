@@ -1,0 +1,106 @@
+.main {
+    .prices-article {
+        padding: 2rem 15px 3.5rem;
+        @media screen and (max-width: 768px) {
+            padding-top: 7rem;
+        }
+        .prices-body {
+            display: flex;
+            flex-wrap: wrap;
+            .prices-body-item:nth-child(1) {
+                .prices-body-item__head {
+                    background: #FF1010;
+                    border-radius: 5px 0px 0px 5px;
+                    @media screen and (max-width:768px) {
+                        border-radius: 5px;
+                    }
+                }
+                p {
+                    margin-right: 2rem;
+                    @media screen and (max-width:768px) {
+                        margin: 0;
+                    }
+                }
+            }
+            .prices-body-item:nth-child(2) {
+                .prices-body-item__head {
+                    background: #3C3D44;
+                    border-radius: 0px 5px 5px 0px;
+                    @media screen and (max-width:768px) {
+                        border-radius: 5px;
+                    }
+                }
+                p, h4 {
+                    margin-left: 2rem;
+                    @media screen and (max-width:768px) {
+                        margin: 0;
+                    }
+                }
+            }
+            .prices-body-item {
+                color: #fff;
+                padding: 1.5rem 0;
+                width: 50%;
+                h3 {
+                    font-family: Merriweather;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    padding: 1.5rem 4rem 1.5rem 1rem; 
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    max-height: 140px;
+                }
+                .prices-body-item__text {
+                    color: #3C3D44;
+                    padding: 1.5rem 0;
+                    h4 {
+                        font-family: "Rubik";
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        padding: 1rem 0;
+                    }
+                    p {
+                        font-family: "Rubik";
+                        font-weight: 400;
+                        font-size: 1rem;
+                        padding: 1rem 0;
+                        border-bottom: 1px solid #3C3D44;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        span {
+                            font-weight: 500;
+                            text-align: end;
+                            margin-left: .7rem;
+                            min-width: 132px;
+                            @media screen and (max-width:768px) {
+                                width: min-content;
+                            }
+                        }
+                    }
+                    .download {
+                        color: #FF2D2D;
+                        line-height: 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        margin-left: .5rem;
+                        .download-icon {
+                            width: 14px;
+                            min-width: auto;
+                            height: 20px;
+                            margin-left: .5rem;
+                        }
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

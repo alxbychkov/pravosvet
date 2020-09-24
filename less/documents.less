@@ -1,0 +1,90 @@
+.main {
+    .document-article {
+        padding: 2rem 15px 3.5rem;
+        @media screen and (max-width: 768px) {
+            padding-top: 7rem;
+        }
+        .document-body-item__head {
+            font-family: 'Merriweather';
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #3C3D44;
+            &::after {
+                content: '';
+                display: block;
+                width: 135px;
+                height: 5px;
+                background: #FF1010;
+                margin-top: 1.2rem;
+            }
+        }
+        .document-body {
+            .document-body-item {
+                color: #fff;
+                padding: 1.5rem 0;
+                display: flex;
+                flex-wrap: wrap;
+                .document-body-item__text:nth-child(odd) {
+                    p {
+                        margin-right: 2rem;
+                        @media screen and (max-width:768px) {
+                            margin: 0;
+                        }
+                    }
+                }
+                .document-body-item__text:nth-child(even) {
+                    p, h4 {
+                        margin-left: 2rem;
+                        @media screen and (max-width:768px) {
+                            margin: 0;
+                        }
+                    }
+                }
+                .document-body-item__text {
+                    color: #3C3D44;
+                    padding: 1.5rem 0;
+                    width: 50%;
+                    h4 {
+                        font-family: "Rubik";
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        padding: 1rem 0;
+                    }
+                    p {
+                        font-family: "Rubik";
+                        font-weight: 400;
+                        font-size: 1rem;
+                        padding: 1rem 0;
+                        border-bottom: 1px solid #3C3D44;
+                        display: flex;
+                        justify-content: space-between;
+                        span {
+                            color: #FF2D2D;
+                            line-height: 1rem;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .download {
+                            color: #FF2D2D;
+                            line-height: 1rem;
+                            display: flex;
+                            align-items: center;
+                            margin-left: .5rem;
+                            .download-icon {
+                                width: 14px;
+                                height: 20px;
+                                margin-left: .5rem;
+                            }
+                            &:hover {
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

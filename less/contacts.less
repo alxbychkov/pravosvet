@@ -1,0 +1,57 @@
+.main {
+    .contacts-article {
+        padding-top: 4rem;
+        @media screen and (max-width: 768px) {
+            padding-top: 7rem;
+        }
+        .contacts-section {
+            .contacts-body-item__head {
+                font-family: 'Merriweather';
+                font-weight: 700;
+                font-size: 1.5rem;
+                color: #3C3D44;
+                margin-bottom: 2rem;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 135px;
+                    height: 5px;
+                    background: #FF1010;
+                    margin-top: 1.2rem;
+                }
+            }
+        }
+        .contacts-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #696969;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            @media screen and (max-width: 991px){
+                margin-bottom: 2rem;
+            }
+            p {
+                font-family: 'Merriweather',sans-serif;
+                margin-bottom: 1.5rem;
+                font-size: 1.2rem;
+            }
+            span {
+                margin-bottom: 1.5rem;
+            }
+            a {
+                padding-right: 1rem;
+            }
+            a:hover {
+                color: #FF1010;
+            }
+            .mail {
+                margin-top: 1rem;
+            }
+            .map {
+                margin-top: 2.5rem;
+                height: 500px;
+            }
+        }
+    }
+}
